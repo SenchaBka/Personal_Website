@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import { useState} from "react";
+import { Link } from "react-router-dom";
 
 import bgPhotographer from "../assets/photos/filmmaking_bg.jpg"
 import bgSoftware from "../assets/photos/software_bg.jpg"
@@ -35,6 +36,7 @@ export default function HeroSplit(){
         >
           <h1 className="text-4xl font-bold text-white">Filmmaking</h1>
         </motion.div>
+        <Link to="/photography" className="absolute inset-0 z-20" />
       </motion.div>
 
       {/*Divider*/}
@@ -66,6 +68,7 @@ export default function HeroSplit(){
         >
           <h1 className="text-4xl font-bold text-white">Software Engineering</h1>
         </motion.div>
+        <Link to="/software" className="absolute inset-0 z-20" />
       </motion.div>
     </div>
   );
